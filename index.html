@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GYM METRO</title>
+    <link rel="icon" href="./img/pesa.ico" type="image/x-icon">
+    <!-- Enlace a Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+
+</head>
+
+<body class="bg-gray-400">
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Contenedor del logo y nombre del gimnasio -->
+            <div class="flex items-center">
+                <!-- Icono del menú desplegable -->
+                <img src="./img/logo2.png" alt="Logo del gimnasio" class="h-24 rounded-full mr-2">
+                <!-- Nombre del gimnasio -->
+                <span id="gymName" class="text-white text-xl font-semibold">GYM Metro</span>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="text-white hover:text-blue-200">Inicio</a>
+                <a href="clases.html" class="text-white hover:text-blue-200">Clases</a>
+                <a href="horarios.html" class="text-white hover:text-blue-200">Horarios</a>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <!-- Video banner -->
+    <div class="relative">
+        <video autoplay muted loop class="w-full h-96 object-cover">
+            <source src="./videos/cinta.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+
+        <img src="./img/promocion.png" alt="promocion"
+            class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+
+    </div>
+
+
+
+
+    <!-- Carrusel de fotos -->
+    <div class="flex justify-center flex-wrap md:flex-no-wrap my-8">
+        <!-- Foto 1 -->
+        <div class="group mx-auto mb-4">
+            <a href="#nuestras-clases">
+                <img src="./img/slide1.jpg" alt="Foto 1"
+                    class="w-64 h-48 object-cover rounded-lg transition duration-300 transform group-hover:scale-105">
+                <h3 class="mt-2 text-center font-semibold text-gray-800 group-hover:text-blue-500">Entrenamiento
+                    personalizado</h3>
+            </a>
+        </div>
+        <!-- Foto 2 -->
+        <div class="group mx-auto mb-4">
+            <a href="#nuestras-clases">
+                <img src="./img/slide2.jpg" alt="Foto 2"
+                    class="w-64 h-48 object-cover rounded-lg transition duration-300 transform group-hover:scale-105">
+                <h3 class="mt-2 text-center font-semibold text-gray-800 group-hover:text-blue-500">Spinning</h3>
+            </a>
+        </div>
+        <!-- Foto 3 -->
+        <div class="group mx-auto mb-4">
+            <a href="#nuestras-clases">
+                <img src="./img/slide3.jpg" alt="Foto 3"
+                    class="w-64 h-48 object-cover rounded-lg transition duration-300 transform group-hover:scale-105">
+                <h3 class="mt-2 text-center font-semibold text-gray-800 group-hover:text-blue-500">Artes marciales</h3>
+            </a>
+        </div>
+        <!-- Foto 4 -->
+        <div class="group mx-auto mb-4">
+            <a href="#tienda">
+                <img src="./img/slide4.jpg" alt="Foto 4"
+                    class="w-64 h-48 object-cover rounded-lg transition duration-300 transform group-hover:scale-105">
+                <h3 class="mt-2 text-center font-semibold text-gray-800 group-hover:text-blue-500">Tienda</h3>
+            </a>
+        </div>
+    </div>
+
+
+
+
+    <!-- Sección de Clases -->
+    <div class="container mx-auto py-8" id="nuestras-clases">
+        <h2 class="text-3xl font-bold text-center mb-4">Nuestras Clases</h2>
+        <!-- Contenedor de las tarjetas con borde gris oscuro -->
+        <div class="p-4 border border-gray-200 rounded-lg bg-gray-800">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <!-- Clase 1 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./img/personalizado.jpg" alt="Clase 1" class="w-full h-40 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-2">Entrenamiento personalizado</h3>
+                    <p class="mt-2">"Nuestro programa de entrenamiento personalizado está diseñado para adaptarse a tus
+                        necesidades individuales y objetivos de fitness. Trabajando en estrecha colaboración con
+                        nuestros
+                        entrenadores certificados, recibirás un plan de ejercicios personalizado que aborda tus metas
+                        específicas, ya sea perder peso, aumentar la fuerza, mejorar la resistencia o simplemente
+                        mejorar tu
+                        salud en general. Con un enfoque individualizado, sesiones motivadoras y seguimiento constante,
+                        nuestro equipo te ayudará a alcanzar tus metas de manera eficiente y segura."</p>
+                    <a href="clases.html" class="text-blue-500 mt-4 inline-block underline"
+                        id="entrenamiento-personalizado">Más
+                        información</a>
+                </div>
+                <!-- Clase 2 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./img/spinning.jpg" alt="Clase 2" class="w-full h-40 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-2">Spinning</h3>
+                    <p class="mt-2">"El spinning es una forma energética y divertida de hacer ejercicio cardiovascular,
+                        donde pedalearás en una bicicleta estática al ritmo de la música y bajo la guía de nuestros
+                        instructores altamente calificados. Esta actividad de alto impacto te brinda una sesión de
+                        entrenamiento intensa que mejora la resistencia cardiovascular, quema calorías y fortalece las
+                        piernas y los glúteos. Con una combinación de cambios de ritmo, resistencia y diferentes
+                        posiciones
+                        en la bicicleta, cada clase de spinning es una experiencia desafiante y gratificante que te
+                        dejará
+                        con una sensación de logro y energía renovad</p>
+                    <a href="clases.html" class="text-blue-500 mt-4 inline-block underline" id="spinning">Más
+                        información</a>
+                </div>
+                <!-- Clase 3 -->
+                <div class="bg-white rounded-lg shadow-md p-4">
+                    <img src="./img/artesmarciales.jpg" alt="Clase 3" class="w-full h-40 object-cover rounded">
+                    <h3 class="text-xl font-bold mt-2">Artes marciales</h3>
+                    <p class="mt-2">"Nuestro programa de artes marciales te ofrece la oportunidad de aprender y dominar
+                        una
+                        variedad de disciplinas, desde el poderoso taekwondo hasta la gracia del karate. Además de
+                        enseñarte
+                        las técnicas y movimientos fundamentales de cada arte marcial, nuestras clases también se
+                        centran en
+                        el desarrollo personal, promoviendo la disciplina, el respeto, la concentración y la
+                        autoconfianza.
+                        Independientemente de tu nivel de habilidad o experiencia previa, nuestros instructores expertos
+                        te
+                        guiarán en un viaje emocionante hacia el dominio físico y mental, mientras te sumerges en la
+                        rica
+                        tradición y filosofía de las artes marciales."</p>
+                    <a href="clases.html" class="text-blue-500 mt-4 inline-block underline" id="artes-marciales">Más
+                        información</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Sección de Tienda -->
+    <section class="bg-gray-500 py-12 mt-6 " id="tienda">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-semibold text-center mb-8 text-red-700">¡Echa un vistazo a nuestra tienda!</h2>
+
+            <!-- Grilla de productos -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Producto 1 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4">
+                    <img src="./img/producto1.jpg" alt="Producto 1" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Camiseta Gimnasio Metro</h3>
+                        <p class="text-gray-600">$18.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 2 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4 ">
+                    <img src="./img/producto2.jpg" alt="Producto 2" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Pantalón Deportivo</h3>
+                        <p class="text-gray-600">$35.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+
+                <!-- Producto 3 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4">
+                    <img src="./img/producto3.jpg" alt="Producto 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Zapatillas Running</h3>
+                        <p class="text-gray-600">$69.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 4 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4">
+                    <img src="./img/producto4.jpg" alt="Producto 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Campera Deportiva Metro</h3>
+                        <p class="text-gray-600">$49.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 5 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4">
+                    <img src="./img/producto5.jpg" alt="Producto 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Calza deportiva</h3>
+                        <p class="text-gray-600">$29.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+                <!-- Producto 6 -->
+                <div
+                    class="bg-white rounded-lg shadow-md overflow-hidden transition-transform transform hover:scale-105 mx-4">
+                    <img src="./img/producto6.jpg" alt="Producto 3" class="w-full h-64 object-cover">
+                    <div class="p-4">
+                        <h3 class="text-lg font-semibold mb-2 text-gray-800">Short deportivo</h3>
+                        <p class="text-gray-600">$29.999</p>
+                        <button class="mt-4 bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Agregar al
+                            carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Banner promocional -->
+    <div class="relative bg-gray-900 text-white py-8">
+        <div class="container mx-auto flex flex-col justify-center items-center">
+            <h2 class="text-3xl font-bold mb-4">¡Aprovecha nuestra promoción especial!</h2>
+            <p class="text-lg mb-6">Descuentos exclusivos en membresías mensuales. ¡No te lo pierdas!</p>
+            <a href="membresia.html"
+                class="mt-4 px-6 py-3 bg-yellow-500 hover:bg-yellow-600 rounded-full text-white font-semibold transition-colors duration-300">Ver
+                Membresías</a>
+        </div>
+    </div>
+
+    <!-- Footer (pie de página) -->
+    <footer class="bg-gray-500 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center ">
+            <!-- Información de contacto -->
+            <div>
+                <p class="hover:text-blue-900 mx-2 ">Dirección: Calle Las Dalias 123</p>
+                <p class="hover:text-blue-900 mx-2 ">Teléfono: (123) 456-7890</p>
+                <p class="hover:text-blue-900 mx-2 ">Localidad: Tigre - Buenos Aires</p>
+            </div>
+            <!-- Redes sociales -->
+            <div>
+                <a href="https://www.facebook.com" class="text-white hover:text-blue-900 mx-2 text-2xl"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" class="text-white hover:text-black mx-2 text-2xl"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="text-white hover:text-red-900 mx-2 text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+        </div>
+        <!-- Información de derechos de autor -->
+        <div class="container mx-auto mt-4 text-center text-sm text-yellow-400 hover:text-yellow-900">
+            <p>&copy; 2024 Vilma Ponce ❤️. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:vilmuponce@gmail.com" class="underline">vilmuponce@gmail.com</a></p>
+        </div>
+    </footer>
+
+</body>
+
+</html>

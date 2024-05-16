@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gimnasio Metro</title>
+    <link rel="icon" href="./img/pesa.ico" type="image/x-icon">
+    <!-- Enlace a Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+<body class="bg-gray-400">
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Contenedor del logo y nombre del gimnasio -->
+            <div class="flex items-center">
+                <!-- Icono del menú desplegable -->
+                <img src="./img/logo2.png" alt="Logo del gimnasio" class="h-24 rounded-full mr-2">
+                <!-- Nombre del gimnasio -->
+                <span id="gymName" class="text-white text-xl font-semibold">GYM Metro</span>
+            </div>
+            <!-- Menú de navegación -->
+            <div class="hidden md:flex items-center space-x-4">
+                <a href="index.html" class="text-white hover:text-blue-200">Inicio</a>
+                <a href="clases.html" class="text-white hover:text-blue-200">Clases</a>
+                <a href="horarios.html" class="text-white hover:text-blue-200">Horarios</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Sección de Entrenamiento Funcional -->
+    <div class="container mx-auto py-8">
+        <h2 class="text-3xl font-bold text-center mb-8 text-gray-800">Nuestras Clases</h2>
+
+        <!-- Grilla de imágenes y descripciones -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <!-- Primer bloque -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./img/imagen1.jpg" alt="Imagen 1" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Entrenamiento Personal</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        pulvinar mi eget sapien porta, et eleifend ante gravida. Sed at sem sit amet nibh hendrerit
+                        vulputate.</p>
+                </div>
+            </div>
+
+            <!-- Segundo bloque -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./img/slide2.jpg" alt="Imagen 2" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Spinning</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        pulvinar mi eget sapien porta, et eleifend ante gravida. Sed at sem sit amet nibh hendrerit
+                        vulputate.</p>
+                </div>
+            </div>
+
+            <!-- Tercer bloque -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./img/imagen3.jpg" alt="Imagen 3" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Artes marciales</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        pulvinar mi eget sapien porta, et eleifend ante gravida. Sed at sem sit amet nibh hendrerit
+                        vulputate.</p>
+                </div>
+            </div>
+
+            <!-- Cuarto bloque -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./img/imagen4.jpg" alt="Imagen 3" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Instructores</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        pulvinar mi eget sapien porta, et eleifend ante gravida. Sed at sem sit amet nibh hendrerit
+                        vulputate.</p>
+                </div>
+            </div>
+            <!-- Quinto bloque -->
+            <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="./img/imagen5.jpg" alt="Imagen 3" class="w-full h-64 object-cover">
+                <div class="p-4">
+                    <h3 class="text-lg font-semibold mb-2 text-gray-800">Funcional</h3>
+                    <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum
+                        pulvinar mi eget sapien porta, et eleifend ante gravida. Sed at sem sit amet nibh hendrerit
+                        vulputate.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Footer (pie de página) -->
+    <footer class="bg-gray-500 text-white py-8">
+        <div class="container mx-auto flex justify-between items-center ">
+            <!-- Información de contacto -->
+            <div>
+                <p class="hover:text-blue-900 mx-2 ">Dirección: Calle Las Dalias 123</p>
+                <p class="hover:text-blue-900 mx-2 ">Teléfono: (123) 456-7890</p>
+                <p class="hover:text-blue-900 mx-2 ">Localidad: Tigre - Buenos Aires</p>
+            </div>
+            <!-- Redes sociales -->
+            <div>
+                <a href="https://www.facebook.com" class="text-white hover:text-blue-900 mx-2 text-2xl"><i
+                        class="fab fa-facebook"></i></a>
+                <a href="https://www.twitter.com" class="text-white hover:text-black mx-2 text-2xl"><i
+                        class="fab fa-twitter"></i></a>
+                <a href="https://www.instagram.com" class="text-white hover:text-red-900 mx-2 text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+        </div>
+        <!-- Información de derechos de autor -->
+        <div class="container mx-auto mt-4 text-center text-sm text-yellow-400 hover:text-yellow-900">
+            <p>&copy; 2024 Vilma Ponce. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:vilmuponce@gmail.com" class="underline">vilmuponce@gmail.com</a></p>
+        </div>
+    </footer>
+
+
+
+</body>
+
+</html>
