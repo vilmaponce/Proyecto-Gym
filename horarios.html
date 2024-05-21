@@ -14,7 +14,7 @@
 
 </head>
 
-<body class="bg-gray-400">
+<body class="bg-gray-100 p-4">
     <!-- Barra de navegación -->
     <nav class="bg-blue-500 p-4">
         <div class="container mx-auto flex justify-between items-center">
@@ -29,92 +29,204 @@
             <div class="hidden md:flex items-center space-x-4">
                 <a href="index.html" class="text-white hover:text-blue-200">Inicio</a>
                 <a href="clases.html" class="text-white hover:text-blue-200">Clases</a>
-                <a href="membresia.html" class="text-white hover:text-blue-200">Membresia</a>
+                <a href="membresia.html" class="text-white hover:text-blue-200">Membresias</a>
             </div>
         </div>
     </nav>
 
 
-    <div class="flex flex-col h-screen">
-        <!-- Segundo bloque (horarios) -->
-        <div class="flex-grow bg-white rounded-lg shadow-md overflow-hidden relative ">
-            <!-- Fondo oscuro con opacidad -->
-            <div class="absolute inset-0 bg-black opacity-50"></div>
-            <!-- Contenido -->
-            <div class="p-4 relative z-10 h-full">
-                <div class="p-1">
-                    <h3 class="text-lg font-semibold mb-1 text-gray-800">Horarios Disponibles</h3>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                        <!-- Horarios de la mañana -->
-                        <div class="bg-gray-200 rounded-lg p-1 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                            </svg>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Mañana</h4>
-                                <ul class="list-disc pl-4">
-                                    <li>Lunes: 8:00 AM - 12:00 PM</li>
-                                    <li>Martes: 8:00 AM - 12:00 PM</li>
-                                    <li>Miércoles: 8:00 AM - 12:00 PM</li>
-                                    <li>Jueves: 8:00 AM - 12:00 PM</li>
-                                    <li>Viernes: 8:00 AM - 12:00 PM</li>
-                                    <li>Sábado: 8:00 AM - 12:00 PM</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- Horarios de la tarde -->
-                        <div class="bg-gray-200 rounded-lg p-1 flex items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 mr-2" fill="none" viewBox="0 0 24 24"
-                                stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M12 6v6m0 0v6m0-6h6m-6 0H6" />
-                            </svg>
-                            <div>
-                                <h4 class="text-lg font-semibold mb-1">Tarde</h4>
-                                <ul class="list-disc pl-4">
-                                    <li>Lunes: 4:00 PM - 8:00 PM</li>
-                                    <li>Martes: 4:00 PM - 8:00 PM</li>
-                                    <li>Miércoles: 4:00 PM - 8:00 PM</li>
-                                    <li>Jueves: 4:00 PM - 8:00 PM</li>
-                                    <li>Viernes: 4:00 PM - 8:00 PM</li>
-                                    <li>Sábado: 4:00 PM - 8:00 PM</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="max-w-4xl mx-auto my-5 bg-white bg-gray-300 shadow-2xl rounded-lg p-6">
+        <div class="text-center">
+            <h1 class="text-4xl font-bold text-red-600">METRO GYM</h1>
+            <p class="text-xl">Las Dalias 123, Temperley</p>
+            <p class="text-lg">Tel: 4243-0972 / 1163957753</p>
+            <div class="mt-4 flex justify-center space-x-4">
+                <a href="#footer-ok" class="text-blue-800 border-2 border-indigo-600 rounded-lg px-8 ">Facebook</a>
+                <a href="#footer-ok" class="text-pink-800 border-2 border-indigo-600 rounded-lg px-8">Instagram</a>
             </div>
         </div>
-        <!-- Footer (pie de página) -->
-        <footer class="bg-gray-500 text-white py-1 md:py-8">
-            <div class="container mx-auto md:flex md:justify-between md:items-center">
-                <!-- Información de contacto -->
-                <div class="md:mb-4">
-                    <p class="hover:text-blue-900 mx-2">Dirección: Calle Las Dalias 123</p>
-                    <p class="hover:text-blue-900 mx-2">Teléfono: (123) 456-7890</p>
-                    <p class="hover:text-blue-900 mx-2">Localidad: Tigre - Buenos Aires</p>
-                </div>
-                <!-- Redes sociales -->
-                <div class="md:mb-4">
-                    <a href="https://www.facebook.com" class="text-white hover:text-blue-900 mx-2 text-2xl"><i
-                            class="fab fa-facebook"></i></a>
-                    <a href="https://www.twitter.com" class="text-white hover:text-black mx-2 text-2xl"><i
-                            class="fab fa-twitter"></i></a>
-                    <a href="https://www.instagram.com" class="text-white hover:text-red-900 mx-2 text-2xl"><i
-                            class="fab fa-instagram"></i></a>
-                </div>
-            </div>
 
-            <!-- Información de derechos de autor -->
-            <div class="container mx-auto mt-4 text-center text-sm text-yellow-400 hover:text-yellow-900">
-                <p>&copy; 2024 Vilma Ponce. Todos los derechos reservados.</p>
-                <p>Contacto: <a href="mailto:vilmuponce@gmail.com" class="underline">vilmuponce@gmail.com</a></p>
-            </div>
-        </footer>
+        <div class="mt-6">
+            <h2 class="text-2xl font-semibold underline">Horarios de Actividades</h2>
+            <p>Lunes a Viernes de 07:00hs a 22:00hs</p>
+            <p>Sábados de 09:00 a 13:00 hs</p>
+        </div>
 
+        <div class="mt-6">
+            <h2 class="text-2xl font-semibold underline">Horarios</h2>
+            <div class="overflow-x-auto mt-4">
+                <table class="min-w-full border-collapse">
+                    <thead>
+                        <tr>
+                            <th class="border px-4 py-2">Hora</th>
+                            <th class="border px-4 py-2">Lunes</th>
+                            <th class="border px-4 py-2">Martes</th>
+                            <th class="border px-4 py-2">Miércoles</th>
+                            <th class="border px-4 py-2">Jueves</th>
+                            <th class="border px-4 py-2">Viernes</th>
+                            <th class="border px-4 py-2">Sábado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="border px-4 py-2">07:00</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">GAP</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">09:00</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2">Ritmos</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">10:00</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">11:00</td>
+                            <td class="border px-4 py-2">Mini-Tramp</td>
+                            <td class="border px-4 py-2">Mini-Tramp</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">12:00</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Barras</td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">14:00</td>
+                            <td class="border px-4 py-2">Mini Tramp</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2">Mini Tramp</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">15:00</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Ritmos</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Ritmos</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">16:00</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Ritmos</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Ritmos</td>
+                            <td class="border px-4 py-2">Barras</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">17:00</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">18:00</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">20:00</td>
+                            <td class="border px-4 py-2">Funcional Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional Spinning</td>
+                            <td class="border px-4 py-2">Funcional</td>
+                            <td class="border px-4 py-2">Funcional Spinning</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">21:00</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2">Spinning</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                        <tr>
+                            <td class="border px-4 py-2">22:00</td>
+                            <td class="border px-4 py-2">Abdominales</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">Abdominales</td>
+                            <td class="border px-4 py-2">Fitness de Combate</td>
+                            <td class="border px-4 py-2">GAP</td>
+                            <td class="border px-4 py-2"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
     </div>
+    <!-- Footer (pie de página) -->
+    <footer class="bg-gray-500 text-white my-5 py-8">
+        <div class="container mx-auto flex justify-between items-center ">
+            <!-- Información de contacto -->
+            <!-- Contenedor del logo y nombre del gimnasio -->
+            <div class="flex items-center">
+                <!-- Icono del menú desplegable -->
+                <img src="./img/logo2.png" alt="Logo del gimnasio" class="h-24 rounded-full mr-2">
+                <!-- Nombre del gimnasio -->
+                <span id="gymName" class="text-white text-xl font-semibold">GYM Metro</span>
+            </div>
+            <div>
+                <p class="hover:text-blue-900 mx-2 ">Dirección: Calle Las Dalias 123</p>
+                <p class="hover:text-blue-900 mx-2 ">Tel: 4243-0972 / 1163957753</p>
+                <p class="hover:text-blue-900 mx-2 ">Temperley - Buenos Aires</p>
+            </div>
+            <!-- Redes sociales -->
+            <div>
+                <a href="https://www.facebook.com" class="text-white hover:text-blue-900 mx-2 text-2xl"><i
+                        class="fab fa-facebook"></i></a>
+
+                <a href="https://www.instagram.com" class="text-white hover:text-red-900 mx-2 text-2xl"><i
+                        class="fab fa-instagram"></i></a>
+            </div>
+
+        </div>
+        <!-- Información de derechos de autor -->
+        <div class="container mx-auto mt-4 text-center text-sm text-yellow-400 hover:text-yellow-900">
+            <p>&copy; 2024 Vilma Ponce ❤️. Todos los derechos reservados.</p>
+            <p>Contacto: <a href="mailto:vilmuponce@gmail.com" class="underline">vilmuponce@gmail.com</a></p>
+        </div>
+
+
+    </footer>
+
+
+
 
 
 </body>
