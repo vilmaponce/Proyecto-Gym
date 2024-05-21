@@ -9,7 +9,7 @@ Este repositorio contiene el código de un sitio web para un gimnasio ficticio l
 
 - **Página de Inicio:** Presenta información general sobre el gimnasio y sus servicios.
 - **Página de Clases:** Detalles sobre las clases ofrecidas, incluyendo descripciones.
-- **Página de Horario:** Presenta dias y horarios ( queda pendiente los horarios de cada una de las clases ).
+- **Página de Horario:** Presenta dias y horarios y sus actividades correspondientes.
 - **Página de Membresias:** Detalla precios y promociones especiales.
   
 ## Tecnologías Utilizadas
