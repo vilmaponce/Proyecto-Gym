@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Ropa Deportiva</title>
+    <!-- Agregar Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="bg-gray-200">
+    <!-- Barra de navegación -->
+    <nav class="bg-blue-500 p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <!-- Menú de navegación -->
+            <div class="flex items-center space-x-4"> <!-- Eliminado el 'hidden md:flex' -->
+                <a href="index.html" class="text-white hover:text-blue-200">Inicio</a>
+                <a href="horarios.html" class="text-white hover:text-blue-200">Horarios</a>
+                <a href="membresia.html" class="text-white hover:text-blue-200">Membresía</a>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Encabezado -->
+    <header class="bg-blue-500 text-white p-4 text-center">
+        <h1 class="text-2xl">Tienda de Ropa Deportiva - Gym Metro</h1>
+    </header>
+
+    <main class="container mx-auto p-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            <!-- Producto 1: Campera -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row hover:scale-105 hover:bg-blue-100">
+                <img src="./img/producto1.jpg" alt="Campera"
+                    class="w-full md:w-1/2 h-49 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+                <div class="p-4 md:w-1/2">
+                    <h2 class="text-xl font-bold mb-2">Campera</h2>
+                    <p class="text-gray-600 text-sm leading-tight mb-4">
+                        Nuestra campera deportiva está diseñada para mantenerte abrigado y cómodo durante tus
+                        entrenamientos. Hecha con materiales de alta calidad, ofrece un tejido transpirable que evita la
+                        acumulación de sudor, una capucha ajustable para mayor protección contra el viento, y bolsillos
+                        con cierre para asegurar tus pertenencias. Disponible en varias tallas y colores, es la elección
+                        perfecta para cualquier actividad física al aire libre.
+                    </p>
+                    <span class="text-blue-500 font-bold block mb-2">$15000</span>
+                    <a href="#" class="text-blue-500 font-bold inline-block">Comprar ahora</a>
+                </div>
+            </div>
+
+            <!-- Producto 2: Conjunto Deportivo -->
+            <div class="bg-gray-100 rounded-lg shadow-md flex flex-col md:flex-row hover:scale-105 hover:bg-blue-100">
+                <img src="./img/producto2.jpg" alt="Conjunto Deportivo"
+                    class="w-full md:w-1/2 h-49 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+                <div class="p-4 md:w-1/2">
+                    <h2 class="text-xl font-bold mb-2">Conjunto Deportivo</h2>
+                    <p class="text-gray-600 text-sm leading-tight mb-4">
+                        El conjunto deportivo perfecto para cualquier tipo de actividad física. Este conjunto incluye
+                        una camiseta y un pantalón, ambos diseñados para ofrecer flexibilidad y comodidad gracias a su
+                        tejido elástico. Proporciona una excelente transpirabilidad para mantenerte fresco durante tus
+                        entrenamientos más intensos. Además, es resistente y duradero, lo que lo convierte en la
+                        elección ideal para cualquier rutina de ejercicio. Disponible en varios estilos y colores.
+                    </p>
+                    <span class="text-blue-500 font-bold block mb-2">$60000</span>
+                    <a href="#" class="text-blue-500 font-bold inline-block">Comprar ahora</a>
+                </div>
+            </div>
+
+            <!-- Producto 3: Calza -->
+            <div class="bg-white rounded-lg shadow-md flex flex-col md:flex-row hover:scale-105 hover:bg-blue-100">
+                <img src="./img/producto5.jpg" alt="Calza"
+                    class="w-full md:w-1/2 h-49 object-cover rounded-t-lg md:rounded-l-lg md:rounded-t-none">
+                <div class="p-4 md:w-1/2">
+                    <h2 class="text-xl font-bold mb-2">Calza</h2>
+                    <p class="text-gray-600 text-sm leading-tight mb-4">
+                        Nuestras calzas deportivas están diseñadas para ofrecer el máximo confort y soporte durante tus
+                        actividades físicas. El tejido de compresión mejora la circulación y el rendimiento, mientras
+                        que las costuras planas evitan rozaduras e irritaciones. La cintura alta proporciona un ajuste
+                        seguro y cómodo, permitiéndote moverte con confianza. Disponibles en una variedad de colores y
+                        estilos, son perfectas para cualquier tipo de entrenamiento.
+                    </p>
+                    <span class="text-blue-500 font-bold block mb-2">$7000</span>
+                    <a href="#" class="text-blue-500 font-bold inline-block">Comprar ahora</a>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="bg-blue-900 text-white py-8">
+        <div class="container mx-auto flex flex-col md:flex-row items-center justify-between px-4">
+            <!-- Información de contacto -->
+            <div class="text-center md:text-left mb-4 md:mb-0">
+                <h3 class="text-lg font-bold mb-2">Contacto</h3>
+                <p class="mb-2">Dirección: Calle Ejemplo 123, Ciudad</p>
+                <p class="mb-2">Teléfono: +1 234 567 890</p>
+                <p>Email: info@gymmetro.com</p>
+            </div>
+            <!-- Enlaces rápidos -->
+            <div class="text-center md:text-right">
+                <h3 class="text-lg font-bold mb-2">Enlaces</h3>
+                <a href="#" class="block text-white hover:underline mb-2">Inicio</a>
+                <a href="#tienda" class="block text-white hover:underline mb-2">Tienda</a>
+                <a href="#horarios" class="block text-white hover:underline mb-2">Horarios</a>
+                <a href="#membresia" class="block text-white hover:underline">Membresía</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+</body>
+
+</html>

@@ -144,10 +144,18 @@ body {
 
 }
 
+/* Estilo para hover en las cards */
+.hover\:scale-105:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para hover en el texto */
+.hover\:bg-blue-100:hover {
+    background-color: #DBEAFE;
+}
 
 @media (max-width: 640px) {
     #gymName {
       display: none;
     }
   }
-  
